@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    // ...
+    "**node_modules": true
+  },
+  "tree-generator.exclude": {
+    "**node_modules": false,
+    "**some-path/**/*.exclude.me": true
+  }
+}
