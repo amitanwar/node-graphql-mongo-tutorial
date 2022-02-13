@@ -68,6 +68,43 @@ or use nodemon
 ```
 nodemon app
 ```
+### API Browse
+
+```
+http://localhost:5000/graphq
+```
+1. Query Request (Get author detail by name)
+
+```
+{
+  author(name: "") {
+    name
+    email
+  }
+}
+```
+
+2. Query Request (Get all authors)
+
+```
+{
+  authors {
+    name
+    email
+  }
+}
+```
+
+3. Mutation Request (Create new author)
+
+```
+mutation {
+  createAuthor(author: {name: "name", phoneNo: "phone", email: "email", address: "address"}) {
+    _id
+    name
+  }
+}
+```
 
 ## License
 
